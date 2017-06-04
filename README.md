@@ -1,6 +1,6 @@
-#ionic3-firebase-auth
+# ionic3-firebase-auth
 
-###About 
+### About 
 
 This is a ionic3 example for do authentication with firebase (signup, signin, verify email and signout).
 
