@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form [formGroup]="registerForm" (ngSubmit)="register()" novalidate>
+
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input formControlName="email" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Contraseña</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div padding>
+      <button 
+        ion-button 
+        block 
+        outline
+        [disabled]="registerForm.invalid"
+        color="white"
+        text-capitalize>Registrarme</button>
+        
+      <button 
+        ion-button 
+        clear 
+        block
+        type="button"
+        (click)="goToLoginPage()"
+        color="white"
+        text-capitalize
+        style="margin-top: 20px;"
+        >Si ya tienes cuenta.
+          <span text-underline style="margin-left: 10px;"> Inicia sesión </span></button>
+    </div>
+  </form>
+
+</ion-content>
