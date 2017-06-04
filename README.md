@@ -1,3 +1,7 @@
+#ionic3-firebase-auth
+
+###About 
+
 This is a ionic3 example for do authentication with firebase (signup, signin, verify email and signout).
 
 ### Create a firebase project, copy the credentials and set them in app.module.ts:
